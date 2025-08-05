@@ -1,4 +1,4 @@
-import { runTests } from '../../../../utils/testRunner.js'
+import { runTests } from "../../../utils/testRunner.js";
 
 /**
  * Ejercicio 2: Encontrar elementos duplicados en un array
@@ -16,7 +16,6 @@ import { runTests } from '../../../../utils/testRunner.js'
  * Complejidad Espacial: O(n)
  */
 function encontrarDuplicadosConObjeto(arr) {
-  // TODO: Implementa la búsqueda de duplicados usando un objeto
   // Crea un objeto para contar ocurrencias
   const counter = new Map();
   // Recorre el array y cuenta cada elemento
@@ -55,7 +54,6 @@ function encontrarDuplicadosConObjeto(arr) {
  * Complejidad Espacial: O(n)
  */
 function encontrarDuplicadosConSet(arr) {
-  // TODO: Implementa la búsqueda de duplicados usando Set
   // Crea un Set para almacenar elementos vistos
   let seen = new Set();
   // Crea un Array vacio para almacenar duplicados
@@ -82,7 +80,6 @@ function encontrarDuplicadosConSet(arr) {
  * Complejidad Espacial: O(n)
  */
 function encontrarDuplicadosConFilter(arr) {
-  // TODO: Implementa la búsqueda de duplicados usando filter e indexOf
   // Usa filter para encontrar elementos cuyo primer índice no coincide con su índice actual
   const duplicates = arr.filter((element, index) => arr.indexOf(element) !== index)
   // Elimina duplicados del resultado usando Set o filter
@@ -101,7 +98,6 @@ function encontrarDuplicadosConFilter(arr) {
  * NOTA: Este método modifica el array original
  */
 function encontrarDuplicadosConMarcado(arr) { //Nota: esta solución solo funciona para arrays de enteros positivos
-  // TODO: Implementa la búsqueda de duplicados usando la técnica de marcado
   // Para cada número en el array, marca su posición correspondiente como negativa
   // Si ya está marcado como negativo, es un duplicado
   // Restaura el array a su estado original y devuelve los duplicados

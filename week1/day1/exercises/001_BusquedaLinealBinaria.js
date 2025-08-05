@@ -1,4 +1,4 @@
-import { runTests } from "../../../../utils/testRunner.js";
+import { runTests } from "../../../utils/testRunner.js";
 
 /**
  * Ejercicio 1: Implementación de algoritmos de búsqueda

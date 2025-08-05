@@ -1,4 +1,4 @@
-import { runTests } from "../../../../utils/testRunner.js";
+import { runTests } from "../../../utils/testRunner.js";
 
 /**
  * Ejercicio 3: Buscar el elemento máximo/mínimo con diferentes técnicas
@@ -35,6 +35,7 @@ function encontrarMaxMinConBucle(arr) {
   // Inicializa max y min con el primer elemento del array
   // Recorre el array y actualiza max y min según corresponda
   // Retorna un objeto con las propiedades max y min
+  return {}
 }
 
 /**
@@ -50,6 +51,7 @@ function encontrarMaxMinConReduce(arr) {
   // Usa reduce para acumular tanto el máximo como el mínimo en un solo recorrido
   // Inicializa el acumulador con el primer elemento como max y min
   // Retorna un objeto con las propiedades max y min
+  return {}
 }
 
 /**
@@ -65,6 +67,7 @@ function encontrarMaxMinRobusto(arr) {
   // Filtra el array para quedarte solo con los números
   // Si no hay números válidos, retorna null o un valor por defecto
   // Usa cualquiera de los métodos anteriores para encontrar max y min
+  return {}
 }
 
 // Casos de prueba
@@ -96,7 +99,6 @@ const testCases = [
   }
 ];
 
-cconsole.log("=== Pruebas con Math.max/min ===");
 const mathMethods = [{ name: 'Math.max/min', func: encontrarMaxMinConMath }]
 runTests({
   testCases,
@@ -104,7 +106,6 @@ runTests({
   compareFunction: (result, expected) => result.max === expected.max && result.min === expected.min
 })
 
-console.log("=== Pruebas con bucle for ===");
 const bucleMethods = [{ name: 'Bucle for', func: encontrarMaxMinConBucle }]
 runTests({
   testCases,
@@ -112,7 +113,6 @@ runTests({
   compareFunction: (result, expected) => result.max === expected.max && result.min === expected.min
 })
 
-console.log("=== Pruebas con reduce ===");
 const reduceMethods = [{ name: 'Reduce', func: encontrarMaxMinConReduce }]
 runTests({
   testCases,
@@ -120,7 +120,6 @@ runTests({
   compareFunction: (result, expected) => result.max === expected.max && result.min === expected.min
 })
 
-console.log("=== Pruebas con versión robusta ===");
 const robustMethods = [{ name: 'Robusto', func: encontrarMaxMinRobusto }]
 runTests({
   testCases,

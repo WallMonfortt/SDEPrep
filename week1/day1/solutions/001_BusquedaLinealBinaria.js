@@ -1,4 +1,4 @@
-import { runTests } from '../../../../utils/testRunner.js'
+import { runTests } from "../../../utils/testRunner.js";
 
 /**
  * Ejercicio 1: Implementación de algoritmos de búsqueda
@@ -36,7 +36,6 @@ function busquedaLineal(arr, target) {
  * Complejidad Espacial: O(1) - Versión iterativa
  */
 function busquedaBinaria(arr, target) {
-  // TODO: Implementa la búsqueda binaria iterativa
   // Define los índices izquierdo y derecho
   let left = 0, rigth = arr.length - 1; 
   // Mientras el índice izquierdo sea menor o igual al derecho:
@@ -72,7 +71,6 @@ function busquedaBinaria(arr, target) {
  * Complejidad Espacial: O(log n) - Por las llamadas recursivas
  */
 function busquedaBinariaRecursiva(arr, target, izq = 0, der = arr.length - 1) {
-  // TODO: Implementa la búsqueda binaria recursiva
   // Caso base: si izq > der, el elemento no está en el array
   if( izq > der) return -1;
   // Calcula el índice medio

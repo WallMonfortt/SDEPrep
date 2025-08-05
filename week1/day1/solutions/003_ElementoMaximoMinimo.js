@@ -1,4 +1,4 @@
-import { runTests } from "../../../../utils/testRunner.js";
+import { runTests } from "../../../utils/testRunner.js";
 
 /**
  * Ejercicio 3: Buscar el elemento máximo/mínimo con diferentes técnicas
@@ -16,7 +16,6 @@ import { runTests } from "../../../../utils/testRunner.js";
  * Complejidad Espacial: O(1)
  */
 function encontrarMaxMinConMath(arr) {
-  // TODO: Implementa la búsqueda de máximo y mínimo usando Math.max/min
   // Usa el operador spread (...) con Math.max y Math.min
   if(arr.length === 0) return {max: null, min: null};
   const max = Math.max(...arr);
@@ -35,7 +34,6 @@ function encontrarMaxMinConMath(arr) {
  * Complejidad Espacial: O(1)
  */
 function encontrarMaxMinConBucle(arr) {
-  // TODO: Implementa la búsqueda de máximo y mínimo usando un bucle
   // Inicializa max y min con el primer elemento del array
   if(arr.length === 0) return {max: null, min: null};
   let max = arr[0], min = arr[0];
@@ -58,7 +56,6 @@ function encontrarMaxMinConBucle(arr) {
  * Complejidad Espacial: O(1)
  */
 function encontrarMaxMinConReduce(arr) {
-  // TODO: Implementa la búsqueda de máximo y mínimo usando reduce
   if(arr.length === 0) return {max: null, min: null};
   // Usa reduce para acumular tanto el máximo como el mínimo en un solo recorrido
   let min = arr[0], max = arr[0];
@@ -80,7 +77,6 @@ function encontrarMaxMinConReduce(arr) {
  * Complejidad Espacial: O(1)
  */
 function encontrarMaxMinRobusto(arr) {
-  // TODO: Implementa una versión robusta que filtre valores no numéricos
   // Filtra el array para quedarte solo con los números
   const filteredArr = arr.filter((val) => typeof val === 'number')
 

@@ -1,4 +1,4 @@
-import { runTests } from '../../../../utils/testRunner.js'
+import { runTests } from "../../../utils/testRunner.js";
 
 /**
  * Ejercicio 2: Encontrar elementos duplicados en un array
@@ -76,7 +76,6 @@ const arrays = [
   ["a", "b", "c", "a", "d", "b"] // Duplicados de strings
 ];
 
-console.log("=== Pruebas con Objeto ===");
 const objectTestCases = [
   { input: [arrays[0]], expected: [] },
   { input: [arrays[1]], expected: [3, 3] },
@@ -91,7 +90,6 @@ runTests({
   expected: objectTestCases.map(testCase => testCase.expected)
 })
 
-console.log("\n=== Pruebas con Set ===");
 const setTestCases = [
   { input: [arrays[0]], expected: [] },
   { input: [arrays[1]], expected: [3] },
@@ -105,7 +103,6 @@ runTests({
   expected: setTestCases.map(testCase => testCase.expected)
 })
 
-console.log("\n=== Pruebas con Filter ===");
 const filterTestCases = [
   { input: [arrays[0]], expected: [] },
   { input: [arrays[1]], expected: [3] },
@@ -118,7 +115,6 @@ runTests({
   expected: filterTestCases.map(testCase => testCase.expected)
 })
 
-console.log("\n=== Pruebas con Marcado ===");
 const marcadoTestCases = [
   { input: [arrays[0]], expected: [] },
   { input: [arrays[1]], expected: [3] },
